@@ -1,0 +1,152 @@
+body {
+    margin: 0;
+    padding: 0 10px; /* Adiciona padding apenas nas laterais */
+    box-sizing: border-box; /* Calcula o tamanho total incluindo padding e borda */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch; /* Estica os itens para preencher a altura */
+    padding: 10px;
+}
+
+.sub-container1, .sub-container2 {
+    flex-grow: 1; /* Faz os sub-contêineres crescerem para ocupar todo o espaço disponível */
+    display: flex;
+    align-items: center; /* Estica os itens para preencher a altura */
+    justify-content: flex-start; /* Alinha os itens à esquerda */
+    border-bottom: 1px solid #000;
+}
+
+
+.sub-container1 {
+    margin-right: 10px;
+    margin-left: 100px;
+}
+
+.sub-container2 {
+    margin-left: 30px;
+}
+
+.elemento {
+    padding: 10px;
+    background-color: #fff;
+    margin-right: 10px;
+    margin-bottom: 10px; /* Espaçamento inferior entre os elementos */
+    box-sizing: border-box; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.btn {
+    background-color:#FF3D9A;
+    color: white;
+    border-radius: 32px;
+    border: none;
+    width: 180px;
+    height: 64px;
+    font-size: 20px; /* Aumente o tamanho da fonte */
+}
+
+
+
+.novoContainer{
+    width: 1208px;
+    height:616px ;
+    gap: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px; /* Adiciona espaço interno à borda */
+    margin: 5px; /* Adiciona espaço externo ao redor da borda */
+    width: 80%; /* Define a largura do contêiner */
+    margin: 0 auto
+}   
+
+
+.subDir{
+    float: right;
+    
+}
+
+
+.subEsq{
+    float: left;
+}
+
+.forever {
+    position: absolute;
+    font-size: 64px;
+    font-size: 4vw;
+    top:30%;
+    left: 24%;
+    transform: translate(-50%, -50%);
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.our{
+    position: absolute;
+    font-size: 24px;
+    font-size: 2vw;
+    top:55%;
+    left: 32%;
+    transform: translate(-50%, -50%);
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.your{
+    position: absolute;
+    font-size: 32px;
+    font-size: 2.5vw; 
+    top:75%;
+    left: 23.7%;
+    transform: translate(-50%, -50%);
+    font-family: Arial, sans-serif;
+    color: #000000;
+    flex: 1;
+}
+
+.btn2{
+    background-color: #FF3D9A;
+    color: white;
+    border-radius: 32px;
+    font-size: 2.5vw; 
+    border: none;
+    width: 177px;
+    height: 64px;
+    font-size: 20px; /* Aumente o tamanho da fonte */
+    position: absolute;
+    font-size: px;
+    top:90%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    font-family: Arial, sans-serif;
+}
+
+
+
+.btn3{
+    background-color: rgb(254, 255, 255);
+    border-radius: 32px;
+    font-size: 2.5vw; 
+    border: solid #000;
+    width: 275px;
+    height: 64px;
+    font-size: 20px; /* Aumente o tamanho da fonte */
+    position: absolute;
+    font-size: 32px;
+    top:90%;
+    left: 33%;
+    transform: translate(-50%, -50%);
+    font-family: Arial, sans-serif;
+}
+
+.doguinho{
+    position: absolute;
+    top:58%;
+    left: 78%;
+    transform: translate(-50%, -50%);
+}
