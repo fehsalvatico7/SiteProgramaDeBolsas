@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            color: #ff69b4;
+        }
+        #donation-form {
+            margin: 0 auto;
+            width: 50%;
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        #donation-form h1 {
+            margin-bottom: 20px;
+        }
+        input[type="email"], input[type="number"], label {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            color: #ff69b4;
+        }
+        input[type="radio"] {
+            margin-right: 5px;
+            transform: scale(2);
+        }
+        .payment-methods {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        input[type="submit"], input[type="reset"] {
+            background-color: #ff69b4;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        input[type="submit"]:hover{
+            background-color: #d2366d;
+        }
+        input[type="reset"]:hover {
+        background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <div id="donation-form">
+        <h1>Choose your donation</h1>
+        <form action="index3.html" method="post">
+            <input type="email" name="email" placeholder="Your email"><br>
+            <input type="number" name="amount" placeholder="How much can you help?"><br>
+            <div class="payment-methods">
+                <label for="pix">PIX</label>
+                <input type="radio" id="pix" name="payment-method" value="pix">
+                <label for="credit-card">Credit Card</label>
+                <input type="radio" id="credit-card" name="payment-method" value="credit-card">
+            </div>
+            <input type="submit" value="I wanna help!" formaction="index3.html">
+            <input type="reset"  onclick="voltarPagina()" value="Cancel">
+        </form>
+        <script>function voltarPagina() {
+            window.history.back();
+        }</script>
+    </div>
+</body>
+</html>

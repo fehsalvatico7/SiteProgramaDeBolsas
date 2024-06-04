@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+    <link rel="stylesheet" type="text/css" href="style2.css">
+</head>
+<body>
+<div class="principal">
+    <h1>Apply to adopt</h1>
+    <h2>Small text description con goes here</h2>
+    <form id="adoptionForm" action="#" method="POST" onsubmit="return validarFormulario()">
+        <label for="email">EMAIL*</label><br>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="nome">FULL NAME*</label><br>
+        <input type="text" id="nome" name="nome"><br><br>
+
+        <label for="data_nascimento">DATE OF BIRTH:</label><br>
+        <input type="date" id="data_nascimento" name="data_nascimento"><br><br>
+        
+        <input type="checkbox" id="termos" name="termos">
+        <label for="termos" class="txtPreto">I agree with <span class="txtRosa">Privacy Policy</span> and <span class="txtRosa">Terms of Conditions</span></label><br><br>
+        
+        <button type="submit" class="submit"> I wanna Adopt!</button>
+        <button type="button" class="cancel" onclick="voltarPagina()">Cancel</button>
+    </form>
+</div>
+
+<script>
+    function voltarPagina() {
+        window.history.back();
+    }
+
+    function validarFormulario() {
+        var termosCheckbox = document.getElementById("termos");
+        if (termosCheckbox.checked) {
+            window.location.href = "index3.html";
+            return false; 
+        } else {
+            alert("Você deve concordar com os termos e condições antes de enviar a solicitação de adoção.");
+            return false; 
+        }
+    }
+</script>
+
+</body>
+</html>

@@ -1,21 +1,21 @@
 body {
     margin: 0;
-    padding: 0 10px; /* Adiciona padding apenas nas laterais */
-    box-sizing: border-box; /* Calcula o tamanho total incluindo padding e borda */
+  
+    box-sizing: border-box; 
 }
 
 .container {
     display: flex;
     justify-content: space-between;
-    align-items: stretch; /* Estica os itens para preencher a altura */
+    align-items: stretch;
     padding: 10px;
 }
 
 .sub-container1, .sub-container2 {
-    flex-grow: 1; /* Faz os sub-contêineres crescerem para ocupar todo o espaço disponível */
+    flex-grow: 1; 
     display: flex;
-    align-items: center; /* Estica os itens para preencher a altura */
-    justify-content: flex-start; /* Alinha os itens à esquerda */
+    align-items: center; 
+    justify-content: flex-start; 
     border-bottom: 1px solid #000;
 }
 
@@ -33,20 +33,22 @@ body {
     padding: 10px;
     background-color: #fff;
     margin-right: 10px;
-    margin-bottom: 10px; /* Espaçamento inferior entre os elementos */
+    margin-bottom: 10px;
     box-sizing: border-box; 
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Inter, sans-serif;
     font-size: 20px;
+    font-family: "Inter", sans-serif;
 }
 
 .btn {
+    width: 180px;
+    height: 64px;
+    font-size: 20px; 
     background-color:#FF3D9A;
     color: white;
     border-radius: 32px;
     border: none;
-    width: 180px;
-    height: 64px;
-    font-size: 20px; /* Aumente o tamanho da fonte */
+    cursor: pointer;
 }
 
 
@@ -58,9 +60,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px; /* Adiciona espaço interno à borda */
-    margin: 5px; /* Adiciona espaço externo ao redor da borda */
-    width: 80%; /* Define a largura do contêiner */
+    padding: 10px; 
+    margin: 5px; 
+    width: 80%; 
     margin: 0 auto
 }   
 
@@ -82,7 +84,7 @@ body {
     top:30%;
     left: 24%;
     transform: translate(-50%, -50%);
-    font-family: Arial, sans-serif;
+    font-family: "Poppins", sans-serif;
     color: #333;
 }
 
@@ -91,9 +93,9 @@ body {
     font-size: 24px;
     font-size: 2vw;
     top:55%;
-    left: 32%;
+    left: 33%;
     transform: translate(-50%, -50%);
-    font-family: Arial, sans-serif;
+    font-family: "Inter", sans-serif;
     color: #333;
 }
 
@@ -102,7 +104,7 @@ body {
     font-size: 32px;
     font-size: 2.5vw; 
     top:75%;
-    left: 23.7%;
+    left: 24%;
     transform: translate(-50%, -50%);
     font-family: Arial, sans-serif;
     color: #000000;
@@ -117,13 +119,13 @@ body {
     border: none;
     width: 177px;
     height: 64px;
-    font-size: 20px; /* Aumente o tamanho da fonte */
+    font-size: 20px; 
     position: absolute;
-    font-size: px;
     top:90%;
     left: 15%;
     transform: translate(-50%, -50%);
     font-family: Arial, sans-serif;
+    cursor: pointer;
 }
 
 
@@ -135,13 +137,16 @@ body {
     border: solid #000;
     width: 275px;
     height: 64px;
-    font-size: 20px; /* Aumente o tamanho da fonte */
+    font-size: 20px; 
     position: absolute;
     font-size: 32px;
     top:90%;
     left: 33%;
     transform: translate(-50%, -50%);
     font-family: Arial, sans-serif;
+    cursor: pointer;
+    max-width: 100%;
+      height: auto;
 }
 
 .doguinho{
@@ -149,4 +154,423 @@ body {
     top:58%;
     left: 78%;
     transform: translate(-50%, -50%);
+    max-width: 100%;
+      height: auto;
 }
+
+.novoContainer2{
+    width: 1512px;
+    height: 924px; 
+    background-size: cover;
+    color: #1E1F27;
+    background-color: #1E1F27;
+    top: 300px;
+}
+
+
+.carousel {
+    width: 1208px;
+    height: 764px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    top: 120px;
+}
+.novoContainer2> h1{
+    color: white;
+    text-align: center;
+    font-size: 56px;
+    font-family: Poppins, sans-serif;
+}
+
+.novoContainer2> h2{
+    color: yellow;
+    text-align: center;
+    font-size: 56px;
+    font-family: Poppins, sans-serif;
+}
+
+.novoContainer2> h3{
+    color: white;
+    text-align: center;
+    font-size: 32px;
+    font-family: Poppins, sans-serif;
+}
+
+.carousel ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: flex-start;
+    transition: none; 
+ }
+      
+.carousel li {
+   flex: 0 0 100%;
+}
+      
+.carousel img {
+    width: 250px;;
+    height: 250px;
+    position : relative; 
+    left: 450px;
+}
+
+.carousel button {
+    position: absolute;
+    top: 65%;
+    transform: translateY(-50%);
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 20px 20px;
+    cursor: pointer;
+    border-radius: 80px;
+    background-color: #ffffff;
+    outline: #fff;
+    top: 200px;
+  }
+  
+
+  .carousel #prevBtn {
+    left: 90px; 
+    font-size: 20px;
+  }
+  
+  .carousel #nextBtn {
+    right: 90px; 
+    font-size: 20px;
+  }
+
+  .donations{
+    max-width: 100%;
+      height: auto;
+  }
+
+  .novoContainer3 {
+    width: 1500px;
+    height: 1117px;
+    background-color: #1E1F27;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center; 
+}
+
+.quadro {
+    width: calc((33.33% - 20px) - 70px);
+    height: 355px; 
+    background-color: #1E1F27;
+    border: 2px solid #ffffff;
+    border-radius: 24px;
+    color: white;
+    margin: 15px;
+
+}
+.quadro > h1 {
+    font-family: Poppins, sans-serif;
+    font-size: 40px;
+}
+
+.quadro > p{
+    font-family: Inter, sans-serif;
+    font-size: 24px;
+}
+
+.novoContainer4{
+    background-color: #fff;
+    width: 1512px;
+    height: 907px;
+
+}
+
+.titleNC4{
+    font-family: Poppins, sans-serif;
+    font-size: 36px;
+    text-align: center;
+}
+
+.novoContainer4 img {
+    position: relative; 
+    left: 60px; 
+    max-width: 100%;
+    height: auto;
+    float: left;
+    margin-right: 20px;
+}
+
+
+.textoCaoGato {
+    float: left;
+    margin-left: 60px
+}
+
+.textoCaoGato > h1{
+    font-size: 32px;
+    font-family: Poppins, sans-serif;
+}
+
+.textoCaoGato > p{
+    font-family: Inter, sans-serif;
+    font-size: 24px;
+}
+
+.adopt2{
+    background-color: #1E1F27;
+    color: white;
+    border-radius: 32px;
+    width: 217px;
+    height: 64px;
+    font-family: Poppins, sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+}
+
+.novoContainer5 {
+    flex-flow: row wrap ; 
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    width: 1506px;
+    height: 716px;
+    background-color: #1E1F27;
+    color: #fff;
+    
+}
+
+.novoContainer5 > h1 {
+    text-align: center;
+    font-size: 56px;
+    font-family: Poppins, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center; 
+}
+
+.quadro2 {
+    width: 272px;
+    height: 358px;
+    display: inline-block; 
+    padding: 20px;
+    border: 2px solid #ffffff;
+    border-radius: 16px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    margin-left: 18px;
+    margin: 29px;
+}
+
+.quadro2 > h1 {
+    text-align: center;
+    font-size: 24px;
+    font-family: Poppins, sans-serif;
+    margin-bottom: 40px;
+}
+
+.quadro2 > p {
+    text-align: center;
+    font-family: Inter, sans-serif;
+    font-size: 20px;
+    margin-bottom: 48px;
+}
+
+.quadro2 > button {
+    width: 224px;
+    height: 64px;
+    align-items: center;
+    border-radius: 16px;
+    display: block; 
+    margin: auto;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: Poppins, sans-serif;
+}
+
+.restante{
+    align-items: center;
+}
+
+
+.btnGreen{
+    width: 224px;
+    height: 64px;
+    background-color: #04C27F;
+    border: none;
+}
+
+.btnPink{
+    width: 224px;
+    height: 64px;
+    background-color: #FF3D9A;
+    border: none;
+}
+
+
+.btnYellow{
+    width: 224px;
+    height: 64px;
+    background-color: #F1D06E;
+    border: none;
+}
+
+.btnPurple{
+    width: 224px;
+    height: 64px;
+    background-color:#5758F1;
+    border: none;
+}
+
+
+.novoContainer6{
+    width: 1590px;
+    height: 550px;
+    background-color: #1E1F27;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    flex-direction: column;
+    margin: -40px;
+}
+
+.imgGat {
+    position : absolute; 
+    left: 1px;
+    top: 4630px;
+}
+
+.imgDog {
+    position : absolute; 
+    left: 1230px;
+    top: 4630px;
+}
+
+
+
+.txt {
+    margin-bottom: 20px;
+    font-size: 36px;
+    font-family: Poppins, sans-serif;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.yellowTxt{
+    color: #F8DB46;
+}
+
+.subTitle{
+    font-size: 28px;
+    font-family: Poppins, sans-serif;
+    margin-bottom: 30px;
+}
+
+
+
+.apply2 {
+    width: 223px;
+    height: 64px;
+    background-color: #1E1F27;
+    border-radius: 32px;
+    border: 2px solid #ffffff;
+    cursor: pointer;
+    font-family: Poppins, sans-serif;
+    font-size: 20px;
+    color: #fff;
+}
+
+
+.adoptable2{
+    width: 238px;
+    height: 64px;
+    background-color: #f8db46;
+    border-radius: 32px;
+    border: none;
+    cursor: pointer;
+    font-family: Poppins, sans-serif;
+    text-align: center;
+    font-size: 20px;
+}           
+
+.container7{
+    background-color: #5758F1;
+    width: 1548px;
+    height: 431px;
+    color: white;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+}
+
+.container7 > h1{
+    font-size: 56px;
+    font-family: Poppins, sans-serif;
+    text-align: center;
+}
+
+.container7 > p{
+    font-size: 20px;
+    font-family: Inter, sans-serif;
+    text-align: center;
+    margin: 80px;
+}
+
+
+
+.email{
+    width: 395px;
+    height: 64px;
+    display: inline-block; 
+    align-items: center;
+    border-radius: 32px;
+    }
+
+    .confEmail {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .confEmail input[type="email"], 
+    .confEmail button {
+        border-radius: 32px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        font-family: Poppins, sans-serif;
+        font-size: 20px;
+    }
+    .confEmail input[type="email"] {
+        margin-right: 5px;
+    }
+
+    .container8{
+        width: 1548;
+        height: 300px;
+        box-sizing: border-box;
+        padding-left: 150px;
+        font-family: Inter, sans-serif;
+        font-size: 20px;
+        padding-right: 60px;
+    }
+    
+    
+    .container8 .box {
+        display: inline-block;
+        vertical-align: top;
+        margin: 25px;
+    }
+
+    .alignH1{
+        text-align: center;
+        font-size: 32px;
+        font-family: Poppins, sans-serif;
+    }
+    .corRosa{
+        color: #FF3D9A;
+    }

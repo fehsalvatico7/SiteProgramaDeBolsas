@@ -1,0 +1,73 @@
+.principal{
+    width: 448px;
+    height: 686px;
+}
+
+
+.principal > h1, h2{
+    text-align: center;
+    font-family: Poppins, sans-serif;
+}
+
+.principal > h1{
+    font-size: 48px;
+}
+
+.principal > h2{
+    font-size: 18px;
+}
+
+.principal input[type="email"] {
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #937AFF;
+    width: 384px;
+}
+
+.principal input[type="text"] {
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #937AFF;
+    width: 384px;
+}
+.principal input[type="date"] {
+    width: 384px; 
+    height: 30px;
+    font-size: 20px;
+}
+
+.principal label{
+    font-size: 16px;
+    font-family: Poppins, sans-serif;
+    color: #FF3D9A;
+}
+
+
+.principal .cancel{
+    width: 384px;
+    height: 60px;
+    background-color: #37383F;
+    font-size: 18px;
+    font-family: Poppins, sans-serif;
+    border-radius: 8px;
+    border: none;
+}
+
+.principal .submit{
+    width: 384px;
+    height: 60px;
+    background-color: #04C27F;
+    font-size: 18px;
+    font-family: Poppins, sans-serif;
+    border-radius: 8px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.principal label.txtPreto{
+    color: black;
+}
+
+.txtRosa{
+    color: #FF3D9A;
+}
