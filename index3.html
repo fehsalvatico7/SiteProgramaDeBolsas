@@ -27,13 +27,29 @@
             font-size: 18px;
             line-height: 1.6;
         }
+        .button{
+            border: none;
+            border-radius: 40px;
+            width: 150px;
+            height: 50px;
+            background-color: aqua;
+        }
+        .container > img{
+            width: 260px;
+            height: 250px;
+        }
     </style>
 </head>
 <body>
     <div class="container">
+        <img src="dogProg.jpeg" alt="dog">
         <h1>Success!</h1>
         <p>Free your creativity and create a beautiful success <br>page to thank your user for subscribing/donating <br>to our project.</p>
-        
+        <button class="button" onclick="goBack()">BACK</button>
     </div>
+
+    <script>function goBack() {
+        window.history.back();
+    }</script>
 </body>
 </html>

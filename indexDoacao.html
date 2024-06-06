@@ -8,7 +8,7 @@
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            color: #ff69b4;
+            color: #000000;
         }
         #donation-form {
             margin: 0 auto;
@@ -30,15 +30,15 @@
             color: #ff69b4;
         }
         input[type="radio"] {
-            margin-right: 5px;
-            transform: scale(2);
+            margin-right: 20px;
+            transform: scale(1.5);
         }
         .payment-methods {
             display: flex;
             justify-content: space-between;
             margin-bottom: 10px;
         }
-        input[type="submit"], input[type="reset"] {
+        input[type="button"], input[type="reset"] {
             background-color: #ff69b4;
             color: #fff;
             border: none;
@@ -51,13 +51,22 @@
             background-color: #d2366d;
         }
         input[type="reset"]:hover {
+            background-color: rgb(54, 21, 21);
+        }
+
+        input[type="reset"] {
             background-color: gray;
+        }
+
+        h1{
+            font-size: 56px;
+            font-family: Poppins, sans-serif;
         }
     </style>
 </head>
 <body>
     <div id="donation-form">
-        <h1>Choose your donation</h1>
+        <h1>Choose your <br>donation</h1>
         <form action="index3.html" method="post">
             <input type="email" name="email" placeholder="Your email"><br>
             <input type="number" name="amount" placeholder="How much can you help?"><br>
@@ -66,19 +75,21 @@
                 <input type="radio" id="pix" name="payment-method" value="pix">
                 <label for="credit-card">Credit Card</label>
                 <input type="radio" id="credit-card" name="payment-method" value="credit-card">
+                <label for="paypal">PayPal</label>
+                <input type="radio" id="paypal" name="payment-method" value="paypal">
             </div>
-            <input type="submit" value="I wanna help!" formaction="index3.html">
-            <input type="reset" value="Cancel" id="cancelButton">
+            <input type="button" value="🤍I wanna help!" onclick="redirectToDonationPage()"> <br><br>
+            <input type="reset" value="< Cancel" id="cancelButton">
         </form>
     </div>
 
     <script>
-        
-        var cancelButton = document.getElementById("cancelButton");
+        function redirectToDonationPage() {
+            window.location.href = "index3.html";
+        }
 
-       
+        var cancelButton = document.getElementById("cancelButton");
         cancelButton.addEventListener("click", function() {
-            
             window.history.back();
         });
     </script>

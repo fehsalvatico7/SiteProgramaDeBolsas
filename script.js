@@ -41,3 +41,7 @@ var donateButton = document.getElementById("donateButton");
 donateButton.addEventListener("click", redirectToDonationPage);
 
 donateButton2.addEventListener("click", redirectToDonationPage);
+
+function redirectToIndex4() {
+  window.location.href = "index4.html";
+}

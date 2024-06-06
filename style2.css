@@ -71,3 +71,9 @@
 .txtRosa{
     color: #FF3D9A;
 }
+
+.principal{
+    align-items: center;
+    text-align:center;
+    padding-left: 500px;
+}

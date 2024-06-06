@@ -16,18 +16,16 @@ body {
     display: flex;
     align-items: center; 
     justify-content: flex-start; 
-    border-bottom: 1px solid #000;
+    border-bottom: 2px solid #000;
 }
 
 
 .sub-container1 {
-    margin-right: 10px;
+    
     margin-left: 100px;
 }
 
-.sub-container2 {
-    margin-left: 30px;
-}
+
 
 .elemento {
     padding: 10px;
