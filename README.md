@@ -1,4 +1,3 @@
-Último envio do projeto já realizado, faltou melhorar o design no CSS de algumas páginas secundárias, porém o tempo se esgotou, projeto referente 
-ao programa de bolsas da Compass feito com base em projeto do Figma.
+Site programmed in HTML, CSS and JavaScript. 
 
-*O projeto não foi criado com modais, ao clicar nos botões, o usuário é redirecionado a outra página.
+The program simulates a pet adoption site.
