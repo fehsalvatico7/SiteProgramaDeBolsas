@@ -1,3 +1,5 @@
-Site programmed in HTML, CSS and JavaScript. 
+# Site Scolarship 2024
 
-The program simulates a pet adoption site.
+## Site created with html, css and javascript, without libraries.
+
+*this site aims to simulate a pet adoption application, in addition to raising donations for the cause.*
